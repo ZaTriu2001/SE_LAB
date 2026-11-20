@@ -1,0 +1,24 @@
+create database CourseRegistration
+create table Faculty
+(
+	FID varchar(10),
+	FName nvarchar(50),
+	[Location] nvarchar(50),
+	Phone nvarchar(50)
+)
+create table Student
+(
+	SID varchar(10),
+	SName nvarchar(50),
+	DOB date,
+	Hometown nvarchar(50),
+	Gender nvarchar(10),
+	[Address] nvarchar(50),
+	FID varchar(10)
+)
+create table course
+(
+	CID varchar(10),
+	CName nvarchar(50),
+	Credit int
+)
